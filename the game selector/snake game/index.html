@@ -8,10 +8,19 @@
         body{
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        h1{
+            color: rgb(255,94, 57);
+        }
+        h6{
+            font-size: 16px;
+            top: 0;
+            color: saddlebrown;
         }
         canvas{
             box-shadow: black 20px 10px 50px;
@@ -20,7 +29,8 @@
 </head>
 
 <body>
-    <h1>Snake</h1>
+    <h1>The Zenith's Snake Game</h1>
+    <h6>use the arrow keys so as to control the movements of the snake</h6>
     
     <canvas id="game" width="400" height="400"/>
     <script src="index.js"></script>

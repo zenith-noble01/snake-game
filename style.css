@@ -1,0 +1,118 @@
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: uchen;
+}
+
+nav{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .closeMenu, .icons{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover{
+    color: rgb(0,110,255);
+}
+.fa-github:hover{
+    color: rgb(255,123,0);
+}
+.fa-instagram:hover{
+    color: rgb(255,0,191);
+}
+.fa-twitter:hover{
+    color: rgb(86,154,243);
+}
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(255,123,0);
+    font-family: uchen;
+}
+nav .mainMenu li a:hover{
+    background: rgb(255,94,0);
+}
+@media(max-width:800px){
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .mainMenu li a:hover{
+        background: none;
+        color: rgb(255,94,0);
+    }
+    nav .openMenu{
+        display: block;
+    }
+     .icons i{
+        font-size: 2rem;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+}
+
+.footer{
+    background: black;
+    color: rgb(255, 94,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 28% 0% 0% 0%; */
+    height: 130px;
+    margin-top: 2%;
+}
+
+footer{
+    text-align: center;
+    margin: 50px 15px 15px 15px;
+}
